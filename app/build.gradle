@@ -71,9 +71,16 @@ dependencies {
     implementation "androidx.appcompat:appcompat:$rootProject.appcompat"
     implementation "com.google.android.material:material:$rootProject.material"
     implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintlayout"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation "androidx.test.ext:junit:$rootProject.junit"
     androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.espresso"
+
+    //Lifecycle
+    implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.lifecycle_extensions"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$rootProject.lifecycle_livedata_ktx"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.lifecycle_viewmodel_ktx"
+
 
     /* adding project library to share with app module*/
     implementation project(path: ':projectlibrary')
